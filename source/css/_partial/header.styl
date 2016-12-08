@@ -1,5 +1,6 @@
 #header
   font-size: 14px
+  min-height: 57px
   position: relative
   border-bottom: 1px solid color-border
   &.mobile-on
@@ -13,7 +14,6 @@
 
 #header-inner
   position: relative
-  overflow: hidden
 
 #main-nav
   float: left
@@ -33,6 +33,8 @@ $nav-link
   @media mq-mobile
     float: none
     text-align: center
+  &:1st-child
+    margin-left: -14px
 
 #main-nav-toggle
   @extend $nav-link
@@ -44,6 +46,7 @@ $nav-link
     content: "\f0c9"
   @media mq-mobile
     display: block
+    position: absolute
 
 #logo
   float:left
